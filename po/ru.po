@@ -446,17 +446,17 @@ msgstr ""
 #, c-format
 msgid "the bitmap data in \"%s\" is compressed which is not supported."
 msgstr ""
-"bitmap-данные в \"%s\" сжаты, это не поддерживается."
+"bitmap-данные в файле \"%s\" сжаты, это не поддерживается."
 
 #: src/BmpFile.cc:521 src/BmpFile.cc:610
 msgid "using a black/white bitmap as cover is very insecure!"
 msgstr ""
-"использование чёрно-белых изображений крайне небезопасно !"
+"использование чёрно-белых изображений КРАЙНЕ НЕБЕЗОПАСНО !"
 
 #: src/BmpFile.cc:529 src/BmpFile.cc:618
 msgid "using a 16-color bitmap as cover is very insecure!"
 msgstr ""
-"использование 16-цветных изображений крайне небезопасно !"
+"использование 16-цветных изображений КРАЙНЕ НЕБЕЗОПАСНО !"
 
 #: src/BmpFile.cc:552
 msgid "maybe corrupted windows bmp data (Reserved in RGBQUAD is non-zero)."
@@ -489,61 +489,57 @@ msgstr ""
 #: src/BmpFile.cc:673
 msgid "an error occured while writing the bmp headers to standard output."
 msgstr ""
-"une erreur a eu lieu lors de l'écriture de l'entête bmp vers la sortie "
-"standard."
+"произошла ошибка при записи bmp-заголовков в стандартный вывод."
 
 #: src/BmpFile.cc:776
 #, c-format
 msgid "maybe corrupted bmp data (padding byte at 0x%lx set to non-zero)."
 msgstr ""
-"possibilité de corruption bmp (octet de remplissage différent de zéro à "
-"l'adresse 0x%lx)."
+"данные bmp возможно повреждены"
+"(выравнивающий байт 0x%lx ненулевой)."
 
 #: src/BmpFile.cc:790
 #, c-format
 msgid "an error occured while reading the bmp data from the file \"%s\"."
 msgstr ""
-"une erreur a eu lieu lors de la lecture des données bitmap du fichier \"%s\"."
+"ошибка чтения bmp-данных из файла \"%s\"."
 
 #: src/BmpFile.cc:794
 #, c-format
 msgid "premature end of file \"%s\" while reading bmp data."
-msgstr "fin innattendue du fichier \"%s\" lors de la lecture des données bmp."
+msgstr "неожиданное окончание файла \"%s\" при чтении bmp-данных."
 
 #: src/BmpFile.cc:798
 msgid "an error occured while reading the bmp data from standard input."
 msgstr ""
-"une erreur a eu lieu lors de la lecture des données bitmap à partir de "
-"l'entrée standard."
+"произошла ошибка при чтении bmp-данных из стандартного ввода."
 
 #: src/BmpFile.cc:802
 msgid "premature end of bmp data from standard input."
-msgstr "fin innatendue des données bmp à partir de l'entrée standard."
+msgstr "неожиданное окончание bmp-данных из стандартного ввода."
 
 #: src/BmpFile.cc:840
 #, c-format
 msgid "an error occured while writing the bitmap data to the file \"%s\"."
 msgstr ""
-"une erreur a eu lieu lors de l'écriture des données bitmap vers le fichier "
+"произошла ошибка при записи bitmap-данных в файл"
 "\"%s\"."
 
 #: src/BmpFile.cc:844
 msgid "an error occured while writing the bitmap data to standard output."
 msgstr ""
-"une erreur a eu lieu lors de l'écriture des données bitmap vers la sortie "
-"standard."
+"произошла ошибка при записи bitmap-данных в стандартный вывод"
 
 #: src/CvrStgFile.cc:212
 msgid ""
 "can not read input file. steghide has been compiled without support for jpeg "
 "files."
 msgstr ""
-"Impossible de lire le fichier entrant. steghide a été compilé sans le "
-"support jpeg."
+"невозможно прочитать входной файл. steghide был собран без поддержки jpeg"
 
 #: src/EmbData.cc:91
 msgid "could not extract any data with that passphrase!"
-msgstr "impossible d'extraire des données avec cette passphrase!"
+msgstr "не удалось извлечь данные с таким паролем !"
 
 #: src/EmbData.cc:107
 #, c-format
@@ -551,8 +547,8 @@ msgid ""
 "attempting to read an embedding of version %d but steghide %s only supports "
 "embeddings of version %d."
 msgstr ""
-"Essaie de lecture d'une inclusion de version %d mais steghide %s supporte "
-"seulement la version %d."
+"попытка чтения скрытых данных версии %d , но stehhide %s поддерживает "
+"только скрытые данные версии %d."
 
 #: src/EmbData.cc:137
 msgid ""
@@ -562,24 +558,23 @@ msgid ""
 "libmcrypt\n"
 "(http://mcrypt.sourceforge.net/) and recompile steghide."
 msgstr ""
-"Les données attachées sont cryptées mais steghide a été compilé sans la "
-"fonctionnalité de cryptage.\n"
-"Poue être en mesure de lire les données incorporées, vous devez installer "
-"libmcrypt\n"
-"(http://mcrypt.sourceforge.net/) et recompiler steghide."
+"Скрытые данные зашифрованы, но steghide был собран без "
+"поддержки шифрования.\n"
+"Чтобы извлечь скрытые данные, установите libmcrypt \n"
+"(http://mcrypt.sourceforge.net/) и пересоберите steghide."
 
 #: src/EmbData.cc:226
 msgid "the embedded data has an invalid length."
-msgstr "La longueur des données incorporées est incorrecte."
+msgstr "скрытые данные имеют некорректную длину."
 
 #: src/Embedder.cc:48
 msgid "reading secret data from standard input..."
-msgstr "lecture des données à cacher à partir de l'entrée standard."
+msgstr "читаем секретные данные из стандартного ввода ..."
 
 #: src/Embedder.cc:51
 #, c-format
 msgid "reading secret file \"%s\"..."
-msgstr "lecture du fichier à cacher \"%s\"."
+msgstr "читаем секретный файл \"%s\"."
 
 #: src/Embedder.cc:63 src/Extractor.cc:46 src/ProgressOutput.cc:71
 #: src/Session.cc:88
@@ -588,238 +583,235 @@ msgstr " terminé."
 
 #: src/Embedder.cc:84
 msgid "reading cover file from standard input..."
-msgstr "lecture du fichier-couverture à partir de l'entrée standard."
+msgstr "читаем файл-контейнер из стандартного ввода..."
 
 #: src/Embedder.cc:87
 #, c-format
 msgid "reading cover file \"%s\"..."
-msgstr "lecture du fichier-couverture \"%s\"."
+msgstr "читаем файл-контейнер \"%s\"."
 
 #: src/Embedder.cc:98
 msgid "the cover file is too short to embed the data."
-msgstr "le fichier-couverture est trop petit pour cacher les données."
+msgstr "файл-контейнер слишком мал для сокрытия данных."
 
 #: src/Embedder.cc:104
 msgid "creating the graph..."
-msgstr "creation du graphique..."
+msgstr "создаем graph..."
 
 #: src/Embedder.cc:148 src/Embedder.cc:154
 msgid "standard input"
-msgstr "entrée standard"
+msgstr "стандартный ввод"
 
 #: src/Embedder.cc:160
 #, c-format
 msgid "embedding %s in %s..."
-msgstr "camouflage des données de %s dans %s."
+msgstr "прячем %s внутри %s."
 
 #: src/Embedder.cc:189
 msgid "writing stego file to standard output... "
-msgstr "écriture du fichier stégo vers la sortie standard."
+msgstr "пишем файл стего в стандартный вывод..."
 
 #: src/Embedder.cc:194
 #, c-format
 msgid "writing stego file \"%s\"... "
-msgstr "écriture du fichier stégo \"%s\"... "
+msgstr "пишем файл стего \"%s\"... "
 
 #: src/Embedder.cc:204
 msgid "done"
-msgstr "terminé."
+msgstr "Готово"
 
 #: src/Embedder.cc:217
 #, c-format
 msgid "executing %s..."
-msgstr "execution %s..."
+msgstr "выполняем %s..."
 
 #: src/Extractor.cc:36
 msgid "reading stego file from standard input..."
-msgstr "lecture du fichier stégo à partir de l'entrée standard."
+msgstr "чтение файла стего из стандартного ввода..."
 
 #: src/Extractor.cc:39
 #, c-format
 msgid "reading stego file \"%s\"..."
-msgstr "lecture du fichier stégo \"%s\"."
+msgstr "чтение файла стего \"%s\"..."
 
 #: src/Extractor.cc:52
 msgid "extracting data..."
-msgstr "extraction des données cachées."
+msgstr "извлекаем данные..."
 
 #: src/Extractor.cc:62
 msgid ""
 "the stego data from standard input is too short to contain the embedded data."
 msgstr ""
-"les données stégo de l'entrée standard sont trop petites pour contenir les "
-"données."
+"данные стего из стандартного ввода слишком малы, чтобы содержать"
+"скрытые данные."
 
 #: src/Extractor.cc:65
 #, c-format
 msgid "the stego file \"%s\" is too short to contain the embedded data."
-msgstr "le fichier stégo \"%s\" est trop petit pour contenir les données."
+msgstr "файл стего \"%s\" слишком мал, чтобы содержать скрытые данные."
 
 #: src/Extractor.cc:82
 msgid "checking crc32 checksum..."
-msgstr "verification de la somme de contrôle crc32..."
+msgstr "проверяем crc32 ..."
 
 #: src/Extractor.cc:86
 msgid " ok"
-msgstr " ok"
+msgstr " норма"
 
 #: src/Extractor.cc:90
 msgid " FAILED!"
-msgstr " ECHEC!"
+msgstr " ОШИБКА!"
 
 #: src/Extractor.cc:93
 msgid "crc32 checksum failed! extracted data is probably corrupted."
 msgstr ""
-"le checksum crc32 a échoué! les données extraites sont probablement "
-"corrompues."
+"crc32 ошибочно! Извлеченные данные могут быть повреждены."
 
 #: src/Graph.cc:253
 #, c-format
 msgid " %lu sample values, %lu vertices, %lu edges"
-msgstr " %lu echantillons, %lu sommets, %lu bords"
+msgstr " %lu примеры значений, %lu вершин, %lu граней"
 
 #: src/JpegFile.cc:73
 msgid "can not use standard input as source for jpeg files with libjpeg."
 msgstr ""
-"Impossible d'utilisé l'entrée standard comme source des fichiers jpeg avec "
-"libjpeg."
+"невозможно использовать стандартный ввод как источник"
+"jpeg-файлов с libjpeg."
 
 #: src/MCryptPP.cc:64 src/MCryptPP.cc:249
 #, c-format
 msgid "could not open libmcrypt module \"%s\",\"%s\"."
-msgstr "n'a pas pu ouvrir le module libmcrypt \"%s\",\"%s\"."
+msgstr "невозможно открыть модуль libmcrypt \"%s\",\"%s\"."
 
 #: src/MCryptPP.cc:119
 msgid ""
 "could not initialize libmcrypt encryption. see above error messages if any."
 msgstr ""
-"n'a pas pu initialiser le chiffrement libmcrypt. voir au dessus les messages "
-"d'erreur, s'il y en a."
+"ошибка инициализации шифрования libmcrypt. см. логи выше."
 
 #: src/MCryptPP.cc:132
 msgid "could not encrypt data."
-msgstr "Cryptage impossible."
+msgstr "невозможно зашифровать данные."
 
 #: src/MCryptPP.cc:154
 msgid "could not finish libmcrypt encryption."
-msgstr "Impossible de terminer le cryptage libmcrypt."
+msgstr "невозможно завершить шифрование libmcrypt."
 
 #: src/MCryptPP.cc:185
 msgid ""
 "could not initialize libmcrypt decryption. see above error messages if any."
 msgstr ""
-"n'a pas pu initialiser le déchiffrement libmcrypt. voir au dessus les "
-"messages d'erreur, s'il y en a."
+"ошибка инициализации расшифровки libmcrypt. см. логи выше."
 
 #: src/MCryptPP.cc:198
 msgid "could not decrypt data."
-msgstr "Decryptage impossible."
+msgstr "невозможно расшифровать данные."
 
 #: src/MCryptPP.cc:209
 msgid "could not finish libmcrypt decryption."
-msgstr "Impossible de terminer le decryptage libmcrypt."
+msgstr "невозможно завершить расшифровку libmcrypt."
 
 #: src/MHashKeyGen.cc:61
 msgid "could not generate key using libmhash."
-msgstr "Impossible de générer une clé en utilisant libmhash."
+msgstr "невозможно создать ключ с помощью libmhash."
 
 #: src/MHashPP.cc:45
 #, c-format
 msgid "could not initialize libmhash %s algorithm."
-msgstr "impossible d'initialiser l'algorithme libmhash %s."
+msgstr "невозможно инициализировать алгоритм %s из libmhash."
 
 #: src/ProgressOutput.cc:79
 msgid " done\n"
-msgstr " terminé.\n"
+msgstr " готово.\n"
 
 #: src/RandomSource.cc:38
 msgid ""
 "could not open /dev/urandom, using standard library random numbers instead."
 msgstr ""
-"Impossible d'ouvrir /dev/urandom, utilisation de la librairie standard des "
-"nombres aléatoires à la place."
+"невозможно открыть /dev/urandom, используем взамен"
+"стандартную библиотеку случайных чисел."
 
 #: src/RandomSource.cc:53
 msgid "could not close random input file."
-msgstr "Impossible de fermer le fichier entrant \"%s\"."
+msgstr "невозможно закрыть файл случайных чисел \"%s\"."
 
 #: src/Session.cc:64
 msgid ""
 "please specify a file name for the extracted data (there is no name embedded "
 "in the stego file)."
 msgstr ""
-"choisissez svp un nom pour le fichier d'extraction (il n'y en a aucun "
-"spécifié dans le fichier stégo)."
+"укажите имя файла для извлекаемых данных "
+"(не путать с внедрённым именем внутри стего)."
 
 #: src/Session.cc:71
 msgid "writing extracted data to standard output..."
-msgstr "écriture des données extraites sur la sortie standard."
+msgstr "пишем извлеченные данные в стандартный вывод..."
 
 #: src/Session.cc:75
 #, c-format
 msgid "writing extracted data to \"%s\"..."
-msgstr "écriture des données extraites dans \"%s\"..."
+msgstr "пишем извлеченные данные в \"%s\"..."
 
 #: src/Session.cc:94
 #, c-format
 msgid "wrote extracted data to \"%s\"."
-msgstr "écriture des données extraites dans \"%s\"."
+msgstr "Извлеченные данные записаны в \"%s\"."
 
 #: src/Session.cc:138
 msgid "data from standard input:\n"
-msgstr "Données obtenues à partir de l'entrée standard:\n"
+msgstr "данные из стандартного ввода:\n"
 
 #: src/Session.cc:145
 msgid "capacity"
-msgstr "capacité"
+msgstr "ёмкость"
 
 #: src/Session.cc:152
 msgid "Try to get information about embedded data ?"
-msgstr "Essayer d'obtenir des informations à propos des données incorporées ?"
+msgstr "Попробовать получить информацию о скрытых данных ?"
 
 #: src/Session.cc:171
 msgid "  embedded data:\n"
-msgstr "  données attachées:\n"
+msgstr "  скрытые данные:\n"
 
 #: src/Session.cc:174
 #, c-format
 msgid "  embedded file \"%s\":\n"
-msgstr "  fichier à inclure \"%s\":\n"
+msgstr "  скрытый файл \"%s\":\n"
 
 #: src/Session.cc:177
 #, c-format
 msgid "    size: %s\n"
-msgstr "    taille: %s\n"
+msgstr "    размер: %s\n"
 
 #: src/Session.cc:180 src/Session.cc:186
 msgid "no"
-msgstr "non"
+msgstr "нет"
 
 #: src/Session.cc:185
 #, c-format
 msgid "    encrypted: %s\n"
-msgstr "    cryptage: %s\n"
+msgstr "    зашифрованный: %s\n"
 
 #: src/Session.cc:186
 #, c-format
 msgid "    compressed: %s\n"
-msgstr "    compression: %s\n"
+msgstr "    сжатый: %s\n"
 
 #: src/Session.cc:186
 msgid "yes"
-msgstr "oui"
+msgstr "да"
 
 #: src/Session.cc:191
 msgid "could not extract any data with that passphrase!\n"
-msgstr "impossible d'extraire des données avec cette passphrase!\n"
+msgstr "невозможно извлечь данные с этим паролем!\n"
 
 #: src/Session.cc:214
 msgid ""
 "encryption algorithms:\n"
 "<algorithm>: <supported modes>...\n"
 msgstr ""
-"algorithme de cryptage :\n"
-"<algorithme>: <modes supportés>...\n"
+"алгоритмы шифрования :\n"
+"<алгоритм>: <поддерживаемые режимы>...\n"
 
 #: src/Session.cc:231
 msgid ""
@@ -829,11 +821,10 @@ msgid ""
 "program or install libmcrypt (http://mcrypt.sourceforge.net/) and recompile "
 "steghide.\n"
 msgstr ""
-"steghide a été compilé sans la fonction de cryptage.Si vous souhaitez crypté "
-"vos données avant de les incorporer, utilisez un programme externe de "
-"cryptage\n"
-"ou installez libmcrypt (http://mcrypt.sourceforge.net/) et recompilez "
-"steghide.\n"
+"steghide был собран без поддержки шифрования.\n"
+"если вы хотите шифровать данные перед сокрытием, "
+"используйте внешние шифровалки или установите libmcrypt\n"
+"(http://mcrypt.sourceforge.net/) и пересоберите steghide.\n"
 
 #: src/Session.cc:245
 msgid ""
@@ -889,73 +880,66 @@ msgid ""
 "To extract embedded data from stg.jpg: steghide extract -sf stg.jpg\n"
 msgstr ""
 "\n"
-"le premier argument doit être un des suivants:\n"
-" embed, --embed          cacher des données\n"
-" extract, --extract      extrait les données cachées à partir de données "
-"stégo.\n"
-" info, --info            affiche les informations sur un fichier de "
-"couverture\n"
-"   info <fichier>        affiche les informations sur le fichier <fichier>\n"
-" encinfo, --encinfo      affiche une liste des algorithmes de cryptage "
-"gerés\n"
-" version, --version      affiche les informations sur la version du "
-"programme.\n"
-" license, --license      affiche la license de steghide.\n"
-" help, --help            affiche ce message d'aide.\n"
+"первый аргумент должен быть из этого списка:\n"
+" embed, --embed          скрыть данные\n"
+" extract, --extract      извлечь данные\n"
+" info, --info            показать информацию о контейнере (файле стего)\n"
+"   info <filename>       показать информацию о <filename>\n"
+" encinfo, --encinfo      показать список поддерживаемых алгоритмов шифрования\n"
+" version, --version      сведения о версии\n"
+" license, --license      показать лицензию steghide\n"
+" help, --help            показать эту справку\n"
 "\n"
-"options pour le camouflage de données uniquement:\n"
-" -ef, --embedfile        selectionne le fichier de données\n"
-"   -ef <fichier>         utilise <fichier> comme fichier de données.\n"
-" -cf, --coverfile        sélectionne le fichier-couverture\n"
-"   -cf <fichier>         utilise <fichier> comme fichier couverture\n"
-" -p, --passphrase        spécifie la passphrase\n"
-"   -p <passphrase>       utilise <passphrase> comme passphrase\n"
-" -sf, --stegofile        sélectionne le fichier stégo\n"
-"   -sf <fichier>         utilise <fichier> comme fichier stégo au lieu du "
-"fichier de couverture\n"
-" -e, --encryption        selectionne les параметрs de cryptage\n"
-"   -e <a>[<m>]|<m>[<a>]  precise l'algorithme de cryptage et/ou le mode\n"
-"   -e none               ne chiffre pas les données avant de les cacher\n"
-" -z, --compress          compresse les données avant inclusion (par défaut)\n"
-"   -z <l>                 en utilisant le niveau <l> (1 Meilleur vitesse...9 "
-"Meilleur compression)\n"
-" -Z, --dontcompress      Ne pas compresser les données avant inclusion\n"
-" -K, --nochecksum        n'encapsule pas le checksum crc32 des données\n"
-" -N, --notembedplainname n'encapsule pas le nom du fichier de données.\n"
-" -f, --force             écrase les fichiers existants\n"
-" -q, --quiet             supprime les messages d'information\n"
-" -v, --verbose           affiche des informations détaillées\n"
+"опции сокрытия:\n"
+" -ef, --embedfile        выбрать секретный файл, который скрываем\n"
+"   -ef <filename>        скрыть секретный файл <filename>\n"
+" -cf, --coverfile        выбрать исходный файл-контейнер\n"
+"   -cf <filename>        исходный файл-контейнер <filename>\n"
+" -p, --passphrase        указать пароль / парольную фразу\n"
+"   -p <passphrase>       пароль <passphrase> для скрытия\n"
+" -sf, --stegofile        файл стего (итоговый результат)\n"
+"   -sf <filename>        записать результат в <filename> вместо файла-контейнера\n"
+" -e, --encryption        выбрать параметры шифрования\n"
+"   -e <a>[<m>]|<m>[<a>]  указать алгоритм шифрования и/или режим\n"
+"   -e none               не шифровать данные перед скорытием\n"
+" -z, --compress          сжимать данные перед сокрытием (по-умолчанию)\n"
+"   -z <l>                 уровень сжатия <l> (1 быстрее...9 плотнее)\n"
+" -Z, --dontcompress      не сжимать скрываемые данные\n"
+" -K, --nochecksum        не внедрять crc32 скрываемых данных\n"
+" -N, --dontembedname     не внедрять имя оригинального файла\n"
+" -f, --force             перезаписать существующие файлы\n"
+" -q, --quiet             отключить информационные сообщения\n"
+" -v, --verbose           показывать детальную информацию\n"
 "\n"
-"options l'extraction:\n"
-" -sf, --stegofile        sélectionne le fichier stégo\n"
-"   -sf <fichier>         extrait les données du fichier <fichier>\n"
-" -p, --passphrase        spécifie la passphrase\n"
-"   -p <passphrase>       utilise <passphrase> comme passphrase\n"
-" -xf, --extractfile      sélectionne le fichier pour les données extraites\n"
-"   -xf <fichier>         utilise <fichier> pour ecrire les données "
-"extraites\n"
-" -f, --force             écrase les fichiers existants\n"
-" -q, --quiet             supprime les messages d'information\n"
-" -v, --verbose           affiche des informations détaillées\n"
+"опции извлечения:\n"
+" -sf, --stegofile        укажите файл стего (контейнер с данными)\n"
+"   -sf <filename>        извлечь данные из <filename>\n"
+" -p, --passphrase        пароль для извлечения\n"
+"   -p <passphrase>       пароль <passphrase> для извлечения данных\n"
+" -xf, --extractfile      имя файла для извлекаемых секретных данных\n"
+"   -xf <filename>        записать извлеченные данные в <filename>\n"
+" -f, --force             перезаписать существующие файлы\n"
+" -q, --quiet             отключить информационные сообщения\n"
+" -v, --verbose           показывать детальную информацию\n"
 "\n"
-"options les informations:\n"
-" -p, --passphrase        spécifie la passphrase\n"
-"   -p <passphrase>       utilise <passphrase> comme passphrase\n"
+"параметры команды info:\n"
+" -p, --passphrase        указать пароль для чтения данных\n"
+"   -p <passphrase>       пароль <passphrase> для получения сводки о скрытых данных\n"
 "\n"
-"Pour inclure emb.txt dans cvr.jpg : steghide embed -cf cvr.jpg -ef emb.txt\n"
-"Pour extrait les données de stg.jpg: steghide extract -sf stg.jpg\n"
+"Прячем emb.txt внутри cvr.jpg: steghide embed -cf cvr.jpg -ef emb.txt\n"
+"Извлекаем секретное из stg.jpg: steghide extract -sf stg.jpg\n"
 
 #: src/SteghideError.cc:27
 msgid "error, exiting. (no error message defined)."
-msgstr "erreur, fin du programme. (pas de message d'erreur spécifié)"
+msgstr "ошибка, выходим. (нет другого сообщения об ошибке)"
 
 #: src/Terminal.cc:31 src/Terminal.cc:39 src/Terminal.cc:53
 msgid "could not get terminal attributes."
-msgstr "impossible de determiner les propriétés du terminal."
+msgstr "невозможно получить параметры терминала."
 
 #: src/Terminal.cc:45 src/Terminal.cc:61 src/Terminal.cc:68
 msgid "could not set terminal attributes."
-msgstr "n'a pas pu fixer les propriétés du terminal."
+msgstr "невозможно установить параметры терминала."
 
 #: src/WavFile.cc:346
 #, c-format
