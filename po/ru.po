@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
 "POT-Creation-Date: 2018-12-28 11:02+0300\n"
-"PO-Revision-Date: 2018-12-28 12:09+0300\n"
+"PO-Revision-Date: 2019-01-18 01:38+0300\n"
 "Last-Translator: Amin <aminux@tuta.io>\n"
 "Language-Team: Russian\n"
 "MIME-Version: 1.0\n"
@@ -945,38 +945,35 @@ msgstr "невозможно установить параметры терми�
 #, c-format
 msgid "an error occured while reading the wav headers from the file \"%s\"."
 msgstr ""
-"une erreur a eu lieu lors de la lecture de l'entête wav à partir du fichier "
+"произошла ошибка при чтении wav-заголовков из файла "
 "\"%s\"."
 
 #: src/WavFile.cc:352
 #, c-format
 msgid "premature end of file \"%s\" while reading wav headers."
-msgstr "fin innatendue du fichier \"%s\" lors de la lecture des entetes wav."
+msgstr "неожиданное окончание файла \"%s\" при чтении wav-заголовков."
 
 #: src/WavFile.cc:358
 msgid "an error occured while reading the wav headers from standard input."
 msgstr ""
-"une erreur a eu lieu lors de la lecture de l'entete wav à partir de l'entrée "
-"standard."
+"произошла ошибка при чтении wav-заголовков из стандартного ввода"
 
 #: src/WavFile.cc:364
 msgid "premature end of data from standard input while reading wav headers."
 msgstr ""
-"fin prématurée des données lors de la lecture des entetes wav à partir de "
-"l'entrée standard."
+"неожиданное окончание данных из стандартного ввода при чтении wav-заголовков"
 
 #: src/WavFile.cc:394
 #, c-format
 msgid "an error occured while writing the wav headers to the file \"%s\"."
 msgstr ""
-"une erreur a eu lieu lors de l'écriture de l'entête wav vers le fichier \"%s"
+"произошла ошибка при записи wav-заголовков в файл \"%s"
 "\"."
 
 #: src/WavFile.cc:400
 msgid "an error occured while writing the wav headers to standard output."
 msgstr ""
-"une erreur a eu lieu lors de l'écriture de l'entête wav vers la sortie "
-"standard."
+"произошла ошибка при записи wav-заголовков в стандартный вывод "
 
 #: src/WavFormatChunk.cc:31
 #, c-format
@@ -984,67 +981,64 @@ msgid ""
 "the wav file from standard input has a format that is not supported "
 "(FormatTag: 0x%X)."
 msgstr ""
-"le fichier wav de l'entrée standard est dans un format non supporté (Tag de "
-"format: 0x%X)."
+"файл wav из стандартного ввода имеет неподдерживаемый формат"
+"(тег формата: 0x%X)."
 
 #: src/WavFormatChunk.cc:34
 #, c-format
 msgid ""
 "the wav file \"%s\" has a format that is not supported (FormatTag: 0x%X)."
 msgstr ""
-"le fichier wav \"%s\" est dans un format non supporté (Tag de format: 0x%X)."
+"файл wav \"%s\" имеет неподдерживаемый формат (тег формата: 0x%X)."
 
 #: src/WavFormatChunk.cc:49
 msgid ""
 "the wav file from standard input does not have pcm format (header too long)."
 msgstr ""
-"le fichier wav de l'entrée standard n'a pas de format pcm (en-tête trop "
-"longue)."
+"файл wav из стандартного ввода не является pcm-форматом (заголовок слишком длинный)."
 
 #: src/WavFormatChunk.cc:52
 #, c-format
 msgid "the wav file \"%s\" does not have pcm format (header too long)."
-msgstr "le fichier wav \"%s\" n'a pas de format pcm (en-tête trop longue)."
+msgstr "файл wav \"%s\" не является pcm-форматом (заголовок слишком длинный)."
 
 #: src/WavFormatChunk.cc:57
 msgid "the wav file from standard input is corrupted."
-msgstr "le fichier wav à partir de l'entrée standard est corrompu."
+msgstr "файл wav из стандартного ввода поврежден."
 
 #: src/WavFormatChunk.cc:60
 #, c-format
 msgid "the wav file \"%s\" is corrupted."
-msgstr "le fichier wav \"%s\" est endommagé."
+msgstr "файл wav \"%s\" поврежден."
 
 #: src/error.cc:45
 msgid "type \"steghide --help\" for help."
-msgstr "tapez \"steghide --help\" pour l'aide."
+msgstr "введите \"steghide --help\" для получения краткой справки."
 
 #: src/error.cc:56
 msgid "premature end of data from standard input."
-msgstr "fin prématurée des données à partir de l'entrée standard."
+msgstr "неожиданное окончание данных из стандартного ввода."
 
 #: src/error.cc:60
 #, c-format
 msgid "premature end of file \"%s\"."
-msgstr "fin innattendue du fichier \"%s\"."
+msgstr "неожиданное окончание файла \"%s\"."
 
 #: src/error.cc:66
 msgid "an error occured while reading data from standard input."
 msgstr ""
-"une erreur a eu lieu lors de la lecture des données à partir de l'entrée "
-"standard."
+"произошла ошибка при чтении данных из стандартного ввода "
 
 #: src/error.cc:70
 #, c-format
 msgid "an error occured while reading data from the file \"%s\"."
 msgstr ""
-"une erreur a eu lieu lors de la lecture des données à partir du fichier \"%s"
-"\"."
+"произошла ошибка при чтении данных из файла \"%s\"."
 
 #: src/error.cc:93
 msgid "an error occured while writing data to standard output."
 msgstr ""
-"une erreur a eu lieu lors de l'écriture des données vers la sortie standard."
+"произошла ошибка при записи данных в стандартный вывод."
 
 #: src/error.cc:97
 #, c-format
@@ -1055,13 +1049,12 @@ msgstr ""
 #: src/error.cc:119
 msgid "the file format of the data from standard input is not supported."
 msgstr ""
-"le format de données du fichier à partir de l'entrée standard n'est pas "
-"supporté."
+"файловый формат данных из стандартного ввода не поддерживается"
 
 #: src/error.cc:122
 #, c-format
 msgid "the file format of the file \"%s\" is not supported."
-msgstr "le format du fichier \"%s\" n'est pas supporté."
+msgstr "формат файла \"%s\" не поддерживается."
 
 #: src/error.cc:141
 msgid ""
@@ -1070,155 +1063,145 @@ msgid ""
 "will\n"
 "be implemented in the near future. Steghide has to exit now. Sorry.\n"
 msgstr ""
-"Cette fonction n'est pas (encore) disponible. Merci de me dire "
-"(shetzl@chello.at) \n"
-"vous souhaitez cette fonction pour augmenter les chances qu'elle soit "
-"implemantée\n"
-"dans un futur proche. Steghide est terminé. Désolé.\n"
+"Эта опция (пока что) не доступна. Просьба сообщить мне (shetzl@chello.at) \n"
+"как вы хотите использовать эту фичу, чтобы увеличить шанс "
+"её реализации в ближайшем будущем. Steghide завершил работу. Простите.\n"
 
 #: src/error.cc:161
 msgid ""
 "Other possible reasons for this error are that the passphrase is wrong\n"
 "or that there is no embedded data.\n"
 msgstr ""
-"L'une des raisons de cette erreur est que la passphrase est fausse\n"
-"ou qu'il n'y a pas de données attachées.\n"
+"другие возможные причины этой ошибки - неверный пароль\n"
+"или отсутствие скрытых данных.\n"
 
 #: src/msg.cc:35
 msgid "__no_message_defined__"
-msgstr "__aucun_message_spécifié__"
+msgstr "__нет_доп_сообщения__"
 
 #: src/msg.cc:135 src/msg.cc:153
 msgid "warning:"
-msgstr "attention: "
+msgstr "внимание: "
 
 #: src/msg.cc:162 src/msg.cc:169 src/msg.cc:176
 msgid "y"
-msgstr "o"
+msgstr "д"
 
 #: src/msg.cc:163 src/msg.cc:170 src/msg.cc:177
 msgid "n"
-msgstr "n"
+msgstr "н"
 
 #: src/msg.cc:188
 msgid "unknown terminal. you might need to press <Enter> after answering."
-msgstr "terminal неизвестен. Vous devez appuyer sur <Entrée> après la réponse."
+msgstr "неизвестный терминал. Может потребоваться нажать <Enter> после ответа."
 
 #~ msgid "the \"%s\" argument must be followed by a number between 0 and %d."
-#~ msgstr "le параметр \"%s\" doit être suivi par un chiffre entre 0 et %d."
+#~ msgstr "параметр \"%s\" должен идти с цифрой от 0 до %d."
 
 #, fuzzy
 #~ msgid ""
 #~ "the \"%s\" argument must be followed by the number of times the "
 #~ "construction heuristic should be run."
 #~ msgstr ""
-#~ "le параметр \"%s\" doit être suivi par le nombre de fois que la "
-#~ "construction heuristicdoit être effectuée."
+#~ "параметр \"%s\" должен идтис числом, сколько раз "
+#~ "запустить construction heuristic."
 
 #, fuzzy
 #~ msgid "the \"%s\" argument must be followed by the priority queue range."
-#~ msgstr "le параметр \"%s\" doit être suivi par ...?"
+#~ msgstr "параметр \"%s\" требует указания диапазона приоритетных очередей"
 
 #~ msgid "the algorithm argument can be used only once."
-#~ msgstr "le параметр algorithme ne peut être utilisé qu'une fois."
+#~ msgstr "параметр с указанием алгоритма используется только один раз."
 
 #~ msgid "the file \"%s\" does already exist."
-#~ msgstr "le fichier \"%s\" existe déjà."
+#~ msgstr "файл \"%s\" уже существует."
 
 #~ msgid "the number construction heuristic argument can be used only once."
 #~ msgstr ""
-#~ "le nombre de construction heuristic ne peut être utilisé qu'une seule "
-#~ "fois."
+#~ "аргумент с номером construction heuristic можно указывать только один раз."
 
 #, fuzzy
 #~ msgid "the priority queue range argument can be used only once."
 #~ msgstr ""
-#~ "le параметр de fourchette de priorité de file ne peut être utilisé "
-#~ "qu'une seule fois."
+#~ "параметр диапазона приоритетных очередей можно указывать только один раз."
 
 #, fuzzy
 #~ msgid "the embed file name argument can be used only once."
 #~ msgstr ""
-#~ "le nom du fichier stégo peut être utilisé en argument seulement une fois. "
-#~ "tapez \"%s --help\"pour l'aide."
+#~ "имя скрываемого файла можно указывать только один раз"
+#~ "введите \"%s --help\" для справки."
 
 #, fuzzy
 #~ msgid "the extract file name argument can be used only once."
 #~ msgstr ""
-#~ "le nom du fichier-couverture peut seulement être utilisé une fois en "
-#~ "argument. tapez pour l'aide."
+#~ "имя извлекаемого файла можно указывать только один раз "
 
 #, fuzzy
 #~ msgid "the \"%s\" argument must be followed by the plain file name."
 #~ msgstr ""
-#~ "l'argument \"%s\" doit être suivi du nom du fichier de données. tapez \"%"
-#~ "s --help\" pour l'aide."
+#~ "после параметра \"%s\" должно идти имя файла"
 
 #, fuzzy
 #~ msgid "the stego file name argument can be used only once."
 #~ msgstr ""
-#~ "le nom du fichier stégo peut être utilisé en argument seulement une fois. "
-#~ "tapez \"%s --help\"pour l'aide."
+#~ "имя файла стего можно указывать только один раз"
 
 #, fuzzy
 #~ msgid "the only argument for the \"capacity\" command is a filename."
 #~ msgstr ""
-#~ "l'argument \"%s\" ne peut pas être utilisé ici car le mode verbeux a déjà "
-#~ "été choisi."
+#~ "единственный аргумент для команды \"capacity\" - имя файла"
 
 #, fuzzy
 #~ msgid "you cannot use arguments with the \"encinfo\" command."
 #~ msgstr ""
-#~ "vous ne pouvez pas utilisez d'arguments avec la commande \"version\"."
+#~ "невозможно использовать аргументы с командой \"encinfo\"."
 
 #, fuzzy
 #~ msgid "you cannot use arguments with the \"version\" command."
 #~ msgstr ""
-#~ "vous ne pouvez pas utilisez d'arguments avec la commande \"version\"."
+#~ "невозможно использовать аргументы с командой \"version\"."
 
 #, fuzzy
 #~ msgid "argument \"%s\" can only be used with the \"extract\" command."
 #~ msgstr ""
-#~ "l'argument \"%s\" peut seulement être utilisé avec la commande \"embed\". "
-#~ "tapez \"%s --help\" pour l'aide."
+#~ "параметр \"%s\" может быть использован только с командой \"extract\". "
+#~ "введите \"%s --help\" для справки."
 
 #, fuzzy
 #~ msgid "the argument \"%s\" can not be used with the \"extract\" command."
 #~ msgstr ""
-#~ "l'argument \"%s\" peut seulement être utilisé avec la commande \"embed\". "
-#~ "tapez \"%s --help\" pour l'aide."
+#~ "параметр \"%s\" не может быть использован с командой \"extract\". "
+#~ "введите \"%s --help\" для справки."
 
 #, fuzzy
 #~ msgid "the \"%s\" argument can not be used with the \"capacity\" command."
 #~ msgstr ""
-#~ "l'argument \"%s\" ne peut pas être utilisé ici car le mode verbeux a déjà "
-#~ "été choisi."
+#~ "параметр \"%s\" не может быть использован с командой \"capacity\""
 
 #, fuzzy
 #~ msgid "the \"%s\" argument cannot be used with the \"capacity\" command."
 #~ msgstr ""
-#~ "l'argument \"%s\" ne peut pas être utilisé ici car le mode verbeux a déjà "
-#~ "été choisi."
+#~ "параметр \"%s\"  не может быть использован с командой  \"capacity\"."
 
 #, fuzzy
 #~ msgid "argument \"%s\" can only be used with the \"embed\" command."
 #~ msgstr ""
-#~ "l'argument \"%s\" peut seulement être utilisé avec la commande \"embed\". "
-#~ "tapez \"%s --help\" pour l'aide."
+#~ "параметр \"%s\" может быть использован только с командой \"embed\". "
+#~ "введите \"%s --help\" для справки."
 
 #~ msgid "corrupt jpeg file on standard input:"
-#~ msgstr "fichier jpeg corrompu à partir de l'entrée standard."
+#~ msgstr "поврежденный файл jpeg на стандартном вводе."
 
 #~ msgid "corrupt jpeg file \"%s\":"
-#~ msgstr "fichier jpeg \"%s\" corrompu."
+#~ msgstr "jpeg-файл \"%s\" повреждён."
 
 #, fuzzy
 #~ msgid ""
 #~ "the embedded data is compressed. this is not implemented in this version "
 #~ "(file corruption ?)."
 #~ msgstr ""
-#~ "les données cachées sont compréssées. ceci n'est pas encore implémenté "
-#~ "(fichier corrompu ?)."
+#~ "внедрённые данные сжаты. Это не поддерживается в этой версии "
+#~ "(файл повреждён ?)."
 
 #, fuzzy
 #~ msgid "the maximum length for the embedded file's name is %d characters."
@@ -1361,7 +1344,7 @@ msgstr "terminal неизвестен. Vous devez appuyer sur <Entrée> après l
 #~ msgstr "longueur maximale de l'intervalle fixée à %d."
 
 #~ msgid "the argument \"%s\" is incomplete. type \"%s --help\" for help."
-#~ msgstr "l'argument \"%s\" est incomplet. tapez \"%s --help\" pour l'aide."
+#~ msgstr "параметр \"%s\" est incomplet. введите \"%s --help\" для справки."
 
 #~ msgid ""
 #~ "the bits/sample rate of the wav file \"%s\" is not a multiple of eight."
@@ -1379,7 +1362,7 @@ msgstr "terminal неизвестен. Vous devez appuyer sur <Entrée> après l
 #~ "the compatibility argument can be used only once. type \"%s --help\" for "
 #~ "help."
 #~ msgstr ""
-#~ "l'argument compatibility peut être utilisé une fois seulement. tapez \"%s "
+#~ "параметр compatibility peut être utilisé une fois seulement. tapez \"%s "
 #~ "--help\" pour l'aide."
 
 #~ msgid ""
@@ -1439,12 +1422,12 @@ msgstr "terminal неизвестен. Vous devez appuyer sur <Entrée> après l
 #~ "the stego header encryption argument can be used only once. type \"%s --"
 #~ "help\" for help."
 #~ msgstr ""
-#~ "l'argument stego header encryption peut seulement être utilisé une fois "
-#~ "seulement. tapez \"%s --help\" pour l'aide."
+#~ "параметр stego header encryption peut seulement être utilisé une fois "
+#~ "seulement. введите \"%s --help\" для справки."
 
 #~ msgid "unknown distribution method \"%s\". type \"%s --help\" for help."
 #~ msgstr ""
-#~ "méthode de distribution \"%s\" неизвестенes. tapez \"%s --help\" pour l'aide."
+#~ "méthode de distribution \"%s\" неизвестенes. введите \"%s --help\" для справки."
 
 #~ msgid "writing plain file to \"%s\"."
 #~ msgstr "écriture du fichier de données vers \"%s\"."
