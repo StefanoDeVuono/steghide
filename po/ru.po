@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
 "POT-Creation-Date: 2018-12-28 11:02+0300\n"
-"PO-Revision-Date: 2019-01-18 01:38+0300\n"
+"PO-Revision-Date: 2019-02-19 01:12+0300\n"
 "Last-Translator: Amin <aminux@tuta.io>\n"
 "Language-Team: Russian\n"
 "MIME-Version: 1.0\n"
@@ -579,7 +579,7 @@ msgstr "читаем секретный файл \"%s\"."
 #: src/Embedder.cc:63 src/Extractor.cc:46 src/ProgressOutput.cc:71
 #: src/Session.cc:88
 msgid " done"
-msgstr " terminé."
+msgstr " готово"
 
 #: src/Embedder.cc:84
 msgid "reading cover file from standard input..."
@@ -722,7 +722,7 @@ msgstr "невозможно инициализировать алгоритм %
 
 #: src/ProgressOutput.cc:79
 msgid " done\n"
-msgstr " готово.\n"
+msgstr " готово\n"
 
 #: src/RandomSource.cc:38
 msgid ""
