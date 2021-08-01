@@ -31,6 +31,8 @@ RandomSource.cc SampleValue.cc SampleValueAdjacencyList.cc Selector.cc \
 Session.cc SteghideError.cc Terminal.cc Utils.cc Vertex.cc WavChunk.cc \
 WavChunkHeader.cc WavChunkUnused.cc WavFile.cc WavFormatChunk.cc \
 WavPCMSampleValue.cc error.cc main.cc msg.cc SMDConstructionHeuristic.cc
+AM_LIBTOOLFLAGS = --tag=CXX
+
 LIBS = @LIBINTL@ @LIBS@
 localedir = $(datadir)/locale
 LIBTOOL = $(SHELL) libtool

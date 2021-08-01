@@ -1,0 +1,8 @@
+# 0.6.0
+
+- 18 years later: bump to 0.6.0
+- added modern autotools files
+- fixed compiler errors due to type/ syntax changes
+- fixed libtool tagging
+
+# 0.5.1
