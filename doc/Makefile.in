@@ -450,8 +450,8 @@ maintainer-clean-generic:
 	@echo "This command is intended for maintainers to use"
 	@echo "it deletes files that may require special tools to rebuild."
 	-test -z "$(MAINTAINERCLEANFILES)" || rm -f $(MAINTAINERCLEANFILES)
-@HAVE_DOXYGEN_FALSE@maintainer-clean-local:
 @HAVE_DOXYGEN_FALSE@clean-local:
+@HAVE_DOXYGEN_FALSE@maintainer-clean-local:
 clean: clean-am
 
 clean-am: clean-generic clean-local mostlyclean-am
