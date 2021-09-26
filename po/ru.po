@@ -1214,9 +1214,7 @@ msgstr "неизвестный терминал. Может потребоват
 #~ msgstr "невозможно найти начало маркера (0xff)."
 
 #~ msgid "huffman table has destination specifier %u (0-3 is allowed)."
-#~ msgstr ""
-#~ "указатель назначения таблицы Хаффмана %u (допустимы значения 0-3)"
-#~ msgstr ""
+#~ msgstr "указатель назначения таблицы Хаффмана %u (допустимы значения 0-3)"
 
 #~ msgid ""
 #~ "the jpeg file on standard input uses progressive DCT mode which is not "
