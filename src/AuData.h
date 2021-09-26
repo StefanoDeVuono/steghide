@@ -26,9 +26,9 @@
 
 // AuMuLawAudioData
 typedef AudioDataImpl<AuMuLaw,BYTE> AuMuLawAudioData ;
-template <class AudioDataImpl>
+template <>
 inline BYTE AuMuLawAudioData::readValue (BinaryIO* io) const { return (io->read8()) ; }
-template <class AudioDataImpl>
+template <>
 inline void AuMuLawAudioData::writeValue (BinaryIO* io, BYTE v) const { io->write8(v) ; }
 
 // AuPCM8AudioData
