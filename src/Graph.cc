@@ -19,6 +19,7 @@
  */
 
 #include <ctime>
+#include <climits>
 #include <list>
 #include <map>
 #include <vector>
