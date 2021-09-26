@@ -26,17 +26,17 @@
 
 // AuMuLawAudioData
 typedef AudioDataImpl<AuMuLaw,BYTE> AuMuLawAudioData ;
-template <class BinaryIO> inline BYTE AuMuLawAudioData::readValue (BinaryIO* io) const { return (io->read8()) ; }
-template<BinaryIO* io, BYTE v> inline void AuMuLawAudioData::writeValue (BinaryIO* io, BYTE v) const { io->write8(v) ; }
+inline BYTE AuMuLawAudioData::readValue (BinaryIO* io) const { return (io->read8()) ; }
+inline void AuMuLawAudioData::writeValue (BinaryIO* io, BYTE v) const { io->write8(v) ; }
 
 // AuPCM8AudioData
 typedef AudioDataImpl<AuPCM8,SBYTE> AuPCM8AudioData ;
-template <BinaryIO *io> inline SBYTE AuPCM8AudioData::readValue (BinaryIO* io) const { return ((SBYTE) io->read8()) ; }
+inline SBYTE AuPCM8AudioData::readValue (BinaryIO* io) const { return ((SBYTE) io->read8()) ; }
 inline void AuPCM8AudioData::writeValue (BinaryIO* io, SBYTE v) const { io->write8((BYTE) v) ; }
 
 // AuPCM16AudioData
 typedef AudioDataImpl<AuPCM16,SWORD16> AuPCM16AudioData ;
-template <BinaryIO io> inline SWORD16 AuPCM16AudioData::readValue (BinaryIO* io) const { return ((SWORD16) io->read16_be()) ; }
+inline SWORD16 AuPCM16AudioData::readValue (BinaryIO* io) const { return ((SWORD16) io->read16_be()) ; }
 inline void AuPCM16AudioData::writeValue (BinaryIO* io, SWORD16 v) const { io->write16_be((UWORD16) v) ; }
 
 // AuPCM32AudioData
