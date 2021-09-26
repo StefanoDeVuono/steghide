@@ -172,7 +172,7 @@ class CvrStgFile : public CvrStgObject {
 		{ return BinIO ; } ;
 
 	private:
-	enum FILEFORMAT { UNKNOWN, BMP, WAV, AU, JPEG } ;
+	enum FILEFORMAT { UNKNOWN, BMP, WAV, AU, JPEG, PNG} ;
 
 	/**
 	 * guesses the file format by looking at the first few bytes

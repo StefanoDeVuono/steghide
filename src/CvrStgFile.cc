@@ -28,6 +28,7 @@
 #include "BmpFile.h"
 #include "CvrStgFile.h"
 #include "JpegFile.h"
+#include "PngFile.h"
 #include "SampleValue.h"
 #include "SampleValueAdjacencyList.h"
 #include "Utils.h"
@@ -167,6 +168,9 @@ CvrStgFile::FILEFORMAT CvrStgFile::guessff (BinaryIO *io)
 	else if ((unsigned char) buf[0] == 0xFF && (unsigned char) buf[1] == 0xD8) {
 		retval = JPEG ;
 	}
+	else if ((unsigned char) buf[0] == 0x89 && (unsigned char) buf[1] == 0x50) {
+		retval = PNG ;
+	}
 	else {
 		for (unsigned int i = 2 ; i < 4 ; i++) {
 			buf[i] = (char) io->read8() ;
@@ -210,6 +214,14 @@ CvrStgFile* CvrStgFile::readFile (const std::string& fn)
 			file = new JpegFile (BinIO) ;
 #else
 			throw SteghideError (_("can not read input file. steghide has been compiled without support for jpeg files.")) ;
+#endif
+		break ; }
+
+		case PNG: {
+#ifdef USE_LIBPNG
+			file = new PngFile (BinIO) ;
+#else
+		throw SteghideError(_("cannot read.")) ;
 #endif
 		break ; }
 
