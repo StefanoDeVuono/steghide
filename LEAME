@@ -1,172 +1,172 @@
-IntroducciÛn :
+Introducci√≥n :
 ==============
 
-Steghide es un programa de steganografÌa que puede ocultar informaciÛn adentro de varios tipos
+Steghide es un programa de steganograf√≠a que puede ocultar informaci√≥n adentro de varios tipos
 de archivos de imagen y de audio. Se respetan las respectivas frecuencias de muestreo de colores 
-por lo que sus adjuntos no se ven afectados por las pruebas estadÌsticas de primer orden.
+por lo que sus adjuntos no se ven afectados por las pruebas estad√≠sticas de primer orden.
 
-La versiÛn actual de steghide es la 0.5.1
+La versi√≥n actual de steghide es la 0.5.1
 
-CaracterÌsticas:
-*) compresiÛn de datos adjuntos
+Caracter√≠sticas:
+*) compresi√≥n de datos adjuntos
 *) encriptado de datos adjuntos
-*) se adjunta la checksum para verificaciÛn de integridad de los datos extraÌdos
+*) se adjunta la checksum para verificaci√≥n de integridad de los datos extra√≠dos
 *) reconoce archivos JPEG, BMP, WAV y AU
 
-EsteganografÌa :
+Esteganograf√≠a :
 ===============
 
-EsteganografÌa significa literalmente, escritura encubierta. Su objetivo es ocultar
-el hecho de que se esta enviando informaciÛn. Esto suele lograrse usando un archivo
-portada (algo extenso) y adjuntado un mensaje secreto (m·s corto) en este archivo.
+Esteganograf√≠a significa literalmente, escritura encubierta. Su objetivo es ocultar
+el hecho de que se esta enviando informaci√≥n. Esto suele lograrse usando un archivo
+portada (algo extenso) y adjuntado un mensaje secreto (m√°s corto) en este archivo.
 El resultado es un archivo de apariencia inocua (el archivo stego) que contiene el
 mensaje secreto.
 
-CompilaciÛn e InstalaciÛn :
+Compilaci√≥n e Instalaci√≥n :
 ===========================
 
 Dependencias :
 --------------
-DeberÌamos tener las siguientes librerias instaladas para usar steghide.
+Deber√≠amos tener las siguientes librerias instaladas para usar steghide.
 
 * libmhash
-  Una librerÌa que tiene varios hash de algoritmos y claves criptogr·ficas
-  de generaciÛn de algoritmos. Steghide necesita esta librerÌa para transformar el
-  salvoconducto en una forma que pueda usarse como entrada de algoritmos criptogr·ficos
-  y esteganogr·ficos.
+  Una librer√≠a que tiene varios hash de algoritmos y claves criptogr√°ficas
+  de generaci√≥n de algoritmos. Steghide necesita esta librer√≠a para transformar el
+  salvoconducto en una forma que pueda usarse como entrada de algoritmos criptogr√°ficos
+  y esteganogr√°ficos.
   Puede obtenerse en: http://mhash.sourceforge.net/
 
 * libmcrypt  
-  Una librerÌa que tiene varios algoritmos de encriptado simÈtricos. Si compilamos
+  Una librer√≠a que tiene varios algoritmos de encriptado sim√©tricos. Si compilamos
   steghide sin libmcrypt no podremos usar a steghide para encriptar datos antes
-  de adjuntarlos ni extraer informaciÛn encriptada (aunque conozcamos el salvoconducto
+  de adjuntarlos ni extraer informaci√≥n encriptada (aunque conozcamos el salvoconducto
   apropiado).
   Puede obtenerse en: http://mcrypt.sourceforge.net/
 
 * libjpeg
-  Una librerÌa que usa compactado de im·genes jpeg. Sin esta liberÌa, no podremos
+  Una librer√≠a que usa compactado de im√°genes jpeg. Sin esta liber√≠a, no podremos
   adjuntar datos en archivos jpeg ni extraer datos en archivos jpeg.
   Puede obtenerse en: http://www.ijg.org/
 
 * zlib
-  Una librerÌa de compactado sin pÈrdida de datos. Si compilamos steghide sin tener
-  instalada esta librerÌa no podremos usar steghide para compactar los datos antes
+  Una librer√≠a de compactado sin p√©rdida de datos. Si compilamos steghide sin tener
+  instalada esta librer√≠a no podremos usar steghide para compactar los datos antes
   de adjuntarlos ni extraer datos compactados de un archivo stego.
   Puede obtenerse en: http://www.gzip.org/zlib/
 
 Libmhash es imprecindible para compilar steghide. Aunque se puede compilar sin
-las otras liberÌas se recomienda encarecidamente incluirlas ya que sino perderÌa 
+las otras liber√≠as se recomienda encarecidamente incluirlas ya que sino perder√≠a 
 muchas de sus grandes habilidades.
 
 Linux / Unix :
 --------------
-Una vez desempaquetado la distribuciÛn fuente, ingresar los siguientes comandos:
+Una vez desempaquetado la distribuci√≥n fuente, ingresar los siguientes comandos:
 
 1) ./configure 
 2) make
 3) make check
 4) make install (como root)
 
-Para mas informaciÛn, ver las instrucciones de instalaciÛn genÈricas en el archivo 
-INSTALL que vino con la distribuciÛn.
+Para mas informaci√≥n, ver las instrucciones de instalaci√≥n gen√©ricas en el archivo 
+INSTALL que vino con la distribuci√≥n.
 
 Si falla alguno de estos comandos, por favor, enviarme un email a la lista de correo de steghide
 (steghide-devel@lists.sourceforge.net) describiendo el error.
  
 Windows :
 ---------
-La forma m·s simple es descargar el binario precompilado (que incluye las versiones de Windows
-de todas las librerÌas necesarias) desde la sede de steghide:
+La forma m√°s simple es descargar el binario precompilado (que incluye las versiones de Windows
+de todas las librer√≠as necesarias) desde la sede de steghide:
 http://steghide.sourceforge.net/index.php
 
-Si quisiÈramos compilar las fuentes necesitaremos un compilador de C++. La forma de compilar el
-cÛdigo fuente depender· del compilador que usemos: Por favor, consultar la documentaciÛn del
+Si quisi√©ramos compilar las fuentes necesitaremos un compilador de C++. La forma de compilar el
+c√≥digo fuente depender√° del compilador que usemos: Por favor, consultar la documentaci√≥n del
 compilador.
 
 Steghide puede compilarse con gcc en un entorno cygwin
-(http://www.cygwin.com/) que es una capa de emulaciÛn unix para Windows siguiendo el 
-procedimiento antes descrito para la compilaciÛn Linux/Unix.
+(http://www.cygwin.com/) que es una capa de emulaci√≥n unix para Windows siguiendo el 
+procedimiento antes descrito para la compilaci√≥n Linux/Unix.
 
 Pronto Inicio :
 =============
 
-He aquÌ algunos ejemplos de como puede usarse steghide. Echarle una mirada para 
-hacernos una idea. Si necesitamos informaciÛn m·s detallada por favor, leer la 
-p·gina man.
+He aqu√≠ algunos ejemplos de como puede usarse steghide. Echarle una mirada para 
+hacernos una idea. Si necesitamos informaci√≥n m√°s detallada por favor, leer la 
+p√°gina man.
 
-B·sicamente, se usa asÌ:
+B√°sicamente, se usa as√≠:
 
   $ steghide embed -cf imagen.jpg -ef secreto.txt
   Ingrese salvoconducto:
   Re-ingrese el salvoconducto:
   adjuntando "secreto.txt" en "imagen.jpg"... hecho
 
-Este comando adjuntar· el archivo secreto.txt en el archivo de portada imagen.jpg.
+Este comando adjuntar√° el archivo secreto.txt en el archivo de portada imagen.jpg.
 
-Una vez adjuntado los datos secretos como se viÛ antes podemos enviar el archivo 
-imagen.jpg a la persona que deberÌa recibir el mensaje secreto. El receptor debe 
+Una vez adjuntado los datos secretos como se vi√≥ antes podemos enviar el archivo 
+imagen.jpg a la persona que deber√≠a recibir el mensaje secreto. El receptor debe 
 usar steghide de la siguiente manera:
 
   $ steghide extract -sf imagen.jpg
   Ingrese salvoconducto:
-  los datos extraÌdos se grabaron en "secreto.txt".
+  los datos extra√≠dos se grabaron en "secreto.txt".
 
 Si el salvoconducto declarado es el correcto, el contenido del archivo original 
-secreto.txt se extraer· del archivo stego imagen.jpg y se grabar· en 
+secreto.txt se extraer√° del archivo stego imagen.jpg y se grabar√° en 
 el directorio actual.
 
-Si hemos recibido un archivo que contiene datos adjuntos y quisiÈramos tener 
-m·s informaciÛn sobre el mismo antes de extraerlo, usaremos el comando info:
+Si hemos recibido un archivo que contiene datos adjuntos y quisi√©ramos tener 
+m√°s informaci√≥n sobre el mismo antes de extraerlo, usaremos el comando info:
 
   $ steghide info archivo_recibido.wav
   "archivo_recibido.wav":
     formato: wave audio, PCM encoding
     capacidad: 3.5 KB
-  ø Intento extraer informaciÛn sobre los datos adjuntos? (y/n) y
+  ¬ø Intento extraer informaci√≥n sobre los datos adjuntos? (y/n) y
   Ingrese salvoconducto:
     archivo adjunto "secreto.txt":
-      tamaÒo: 1.6 KB
+      tama√±o: 1.6 KB
       encriptado: rijndael-128, cbc
       comprimido: si
 
-Luego de emitir algunos datos generales sobre el archivo stego (formato, capacidad) se nos preguntar· 
-si queremos que steghide obtenga informaciÛn sobre los datos adjuntos. Si respondemos con 
-yes tendremos que declarar un salvoconducto. Steghide entonces intentar· extraer los datos adjuntos
-con ese salvoconducto y - si tiene 'Èxito - emitir· un informe sobre el mismo.
+Luego de emitir algunos datos generales sobre el archivo stego (formato, capacidad) se nos preguntar√° 
+si queremos que steghide obtenga informaci√≥n sobre los datos adjuntos. Si respondemos con 
+yes tendremos que declarar un salvoconducto. Steghide entonces intentar√° extraer los datos adjuntos
+con ese salvoconducto y - si tiene '√©xito - emitir√° un informe sobre el mismo.
 
 Contacto:
 =========
 
 La Sede :
 ---------
-La versiÛn m·s reciente de steghide e informaciÛn adicional y la documentaciÛn 
+La versi√≥n m√°s reciente de steghide e informaci√≥n adicional y la documentaci√≥n 
 pueden obtenerse de la sede WWW steghide en:
 http://steghide.sourceforge.net/
 
 Listas de Correo :
 ------------------
-Si encontramos alg˙n fallo o si tenemos preguntas, comentarios, sugerencias, etc.
+Si encontramos alg√∫n fallo o si tenemos preguntas, comentarios, sugerencias, etc.
 por favor, enviarme un email a la lista de correo de desarrollo:
 steghide-devel@lists.sourceforge.net
 Para recibir emails enviados a esta lista, podemos suscribirnos en :
 http://lists.sourceforge.net/lists/listinfo/steghide-devel
 
-Si queremos mantenernos informados de cuando aparece una nueva versiÛn de steghide 
+Si queremos mantenernos informados de cuando aparece una nueva versi√≥n de steghide 
 por favor, suscribirse a la lista de correo de anuncios de steghide en:
 http://lists.sourceforge.net/lists/listinfo/steghide-announce
 
-Acceso a CVS anÛnimo :
+Acceso a CVS an√≥nimo :
 ----------------------
 
-Podemos acceder al cÛdigo de desarrollo m·s reciente mediante cvs anÛnimo. Solo hay
-que escribir las siguientes lÌneas:
+Podemos acceder al c√≥digo de desarrollo m√°s reciente mediante cvs an√≥nimo. Solo hay
+que escribir las siguientes l√≠neas:
 
 $ cvs -d:pserver:anonymous@cvs.steghide.sourceforge.net:/cvsroot/steghide login
-CVS password:  [ Ac· pulsar RETURN ]
+CVS password:  [ Ac√° pulsar RETURN ]
 
 $ cvs -z3 -d:pserver:anonymous@cvs.steghide.sourceforge.net:/cvsroot/steghide co steghide
 
-TambiÈn podemos navegar por el repositorio de cvs en WWW:
+Tambi√©n podemos navegar por el repositorio de cvs en WWW:
 http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/steghide/
 
 Autor :
@@ -174,6 +174,6 @@ Autor :
 Pueden contactarme (Stefan Hetzl) por e-mail: shetzl@chello.at
 
 
-TraducciÛn al castellano :
+Traducci√≥n al castellano :
 --------------------------
-versiÛn 1 - Alberto Adri·n Schiano (chanio@users.sourceforge.net)
+versi√≥n 1 - Alberto Adri√°n Schiano (chanio@users.sourceforge.net)
