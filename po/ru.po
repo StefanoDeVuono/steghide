@@ -8,7 +8,9 @@ msgstr ""
 "PO-Revision-Date: 2019-02-19 01:12+0300\n"
 "Last-Translator: Amin <aminux@tuta.io>\n"
 "Language-Team: Russian\n"
+"Language: ru_RU\n"
 "MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 
 #: src/Arguments.cc:84
@@ -1214,16 +1216,10 @@ msgstr "неизвестный терминал. Может потребоват
 #~ msgstr "невозможно найти начало маркера (0xff)."
 
 #~ msgid "huffman table has destination specifier %u (0-3 is allowed)."
-#~ msgstr ""
-#~ "указатель назначения таблицы Хаффмана %u (допустимы значения 0-3)"
-#~ msgstr ""
+#~ msgstr "указатель назначения таблицы Хаффмана %u (допустимы значения 0-3)"
 
-#~ msgid ""
-#~ "the jpeg file on standard input uses progressive DCT mode which is not "
-#~ "supported in this version."
-#~ msgstr ""
-#~ "данные jpeg на стандартном вводе используют прогрессивный режим DCT,"
-#~ "который не поддерживается этой версией."
+#~ msgid "the jpeg file on standard input uses progressive DCT mode which is not supported in this version."
+#~ msgstr "данные jpeg на стандартном вводе используют прогрессивный режим DCT, который не поддерживается этой версией."
 
 #~ msgid ""
 #~ "the jpeg file \"%s\" uses progressive DCT mode which is not supported in "
@@ -1387,9 +1383,7 @@ msgstr "неизвестный терминал. Может потребоват
 #~ "(файл повреждён ?)."
 
 #~ msgid "the interval length for the cnsti method must be smaller than %d."
-#~ msgstr ""
-#~ "длина интервала для метода cnsti должна быть меньше %d"
-#~ ""
+#~ msgstr "длина интервала для метода cnsti должна быть меньше %d"
 
 #~ msgid ""
 #~ "the mask saved in the stego header is not the default (1). This is no "
@@ -1399,35 +1393,22 @@ msgstr "неизвестный терминал. Может потребоват
 #~ "Это больше не поддерживается. (файл повреждён ?)."
 
 #~ msgid "the mask saved in the stego header is zero (file corruption ?)."
-#~ msgstr ""
-#~ "сохранённая в стего-заголовке маска - ноль. (файл повреждён ?)."
+#~ msgstr "сохранённая в стего-заголовке маска - ноль. (файл повреждён ?)."
 
-#~ msgid ""
-#~ "the maximum interval length for the prndi method must be smaller than %d."
-#~ msgstr ""
-#~ "максимальная длина интервала для метода prndi должна быть меньше %d"
-#~ ""
+#~ msgid "the maximum interval length for the prndi method must be smaller than %d."
+#~ msgstr "максимальная длина интервала для метода prndi должна быть меньше %d"
 
 #~ msgid "the maximum length of the passphrase is %d characters."
 #~ msgstr "максимальная длина пароля %d символов."
 
-#~ msgid ""
-#~ "the stego file is too short to contain the stego header (file "
-#~ "corruption ?)."
-#~ msgstr ""
-#~ "Файл слишком короткий, чтобы содержать стего-заголовок"
-#~ "(файл повреждён ?)."
+#~ msgid "the stego file is too short to contain the stego header (file corruption ?)."
+#~ msgstr "Файл слишком короткий, чтобы содержать стего-заголовок (файл повреждён ?)."
 
-#~ msgid ""
-#~ "the stego header encryption argument can be used only once. type \"%s --"
-#~ "help\" for help."
-#~ msgstr ""
-#~ "параметр stego header encryption может использоваться только один раз."
-#~ "введите \"%s --help\" для справки."
+#~ msgid "the stego header encryption argument can be used only once. type \"%s --help\" for help."
+#~ msgstr "параметр stego header encryption может использоваться только один раз. введите \"%s --help\" для справки."
 
 #~ msgid "unknown distribution method \"%s\". type \"%s --help\" for help."
-#~ msgstr ""
-#~ "неизвестный метод распределения \"%s\". введите \"%s --help\" для справки."
+#~ msgstr "неизвестный метод распределения \"%s\". введите \"%s --help\" для справки."
 
 #~ msgid "writing plain file to \"%s\"."
 #~ msgstr "пишем открытый файл \"%s\"."
