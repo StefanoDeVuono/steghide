@@ -2,7 +2,7 @@ Introduction :
 ==============
 
 Steghide is a steganography program that is able to hide data in various kinds
-of image- and audio-files. The color- respectivly sample-frequencies are not
+of image- and audio-files. The color- respectively sample-frequencies are not
 changed thus making the embedding resistant against first-order statistical
 tests.
 
@@ -11,7 +11,7 @@ The current version of steghide is 0.5.1
 Features:
 *) compression of embedded data
 *) encryption of embedded data
-*) embedding of a checksum to verify the integrity of the extraced data
+*) embedding of a checksum to verify the integrity of the extracted data
 *) support for JPEG, BMP, WAV and AU files
 
 Steganography :
@@ -20,7 +20,7 @@ Steganography :
 Steganography literally means covered writing. Its goal is to hide the fact
 that communication is taking place. This is often achieved by using a (rather
 large) cover file and embedding the (rather short) secret message into this
-file. The result is a innocuous looking file (the stego file) that contains
+file. The result is an innocuous looking file (the stego file) that contains
 the secret message.
 
 Compilation and Installation :
@@ -39,24 +39,24 @@ You should have the following libraries installed to use steghide.
 
 * libmcrypt  
   A library that provides a lot of symmetric encryption algorithms. If you
-  compile steghide without libmcrypt you will not be able to use steghide to
-  encrypt data before embedding nor to extract encrypted data (even if you know
+  compile steghide without libmcrypt, you will not be able to use steghide to
+  encrypt data before embedding or to extract encrypted data (even if you know
   the correct passphrase).
   Available at: http://mcrypt.sourceforge.net/
 
 * libjpeg
-  A library implementing jpeg image compression. Without this library you will
-  not be able to embed data in jpeg files nor to extract data from jpeg files.
+  A library implementing jpeg image compression. Without this library, you will
+  not be able to embed data in jpeg files or to extract data from jpeg files.
   Available at: http://www.ijg.org/
 
 * zlib
   A lossless data compression library. If you compile steghide without having
-  this library installed you will not be able to use steghide to compress data
-  before embedding nor to extract compressed data from a stego-file.
+  this library installed, you will not be able to use steghide to compress data
+  before embedding or to extract compressed data from a stego-file.
   Available at: http://www.gzip.org/zlib/
 
 Libmhash is absolutely required to compile steghide. While you can compile it
-without the other libraries they are highly recommended as major functionality
+without the other libraries, they are highly recommended as major functionality
 will not be available without them.
 
 Linux / Unix :
