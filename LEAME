@@ -31,42 +31,29 @@ Deberíamos tener las siguientes librerias instaladas para usar steghide.
 
 * libmhash
   Una librería que tiene varios hash de algoritmos y claves criptográficas
- 
- de generación de algoritmos. Steghide necesita esta librería para transformar el
- 
- salvoconducto en una forma que pueda usarse como entrada de algoritmos criptográficos
- 
- y esteganográficos.
- 
- Puede obtenerse en: http://mhash.sourceforge.net/
- 
+  de generación de algoritmos. Steghide necesita esta librería para transformar el
+  salvoconducto en una forma que pueda usarse como entrada de algoritmos criptográficos
+  y esteganográficos.
+  Puede obtenerse en: http://mhash.sourceforge.net/
+
 * libmcrypt  
   Una librería que tiene varios algoritmos de encriptado simétricos. Si compilamos
- 
- steghide sin libmcrypt no podremos usar a steghide para encriptar datos antes
- 
- de adjuntarlos ni extraer información encriptada (aunque conozcamos el salvoconducto
- 
- apropiado).
- 
- Puede obtenerse en: http://mcrypt.sourceforge.net/
- 
+  steghide sin libmcrypt no podremos usar a steghide para encriptar datos antes
+  de adjuntarlos ni extraer información encriptada (aunque conozcamos el salvoconducto
+  apropiado).
+  Puede obtenerse en: http://mcrypt.sourceforge.net/
+
 * libjpeg
   Una librería que usa compactado de imágenes jpeg. Sin esta libería, no podremos
- 
- adjuntar datos en archivos jpeg ni extraer datos en archivos jpeg.
- 
- Puede obtenerse en: http://www.ijg.org/
- 
+  adjuntar datos en archivos jpeg ni extraer datos en archivos jpeg.
+  Puede obtenerse en: http://www.ijg.org/
+
 * zlib
   Una librería de compactado sin pérdida de datos. Si compilamos steghide sin tener
- 
- instalada esta librería no podremos usar steghide para compactar los datos antes
- 
- de adjuntarlos ni extraer datos compactados de un archivo stego.
- 
- Puede obtenerse en: http://www.gzip.org/zlib/
- 
+  instalada esta librería no podremos usar steghide para compactar los datos antes
+  de adjuntarlos ni extraer datos compactados de un archivo stego.
+  Puede obtenerse en: http://www.gzip.org/zlib/
+
 Libmhash es imprecindible para compilar steghide. Aunque se puede compilar sin
 las otras liberías se recomienda encarecidamente incluirlas ya que sino perdería 
 muchas de sus grandes habilidades.
@@ -110,13 +97,10 @@ página man.
 Básicamente, se usa así:
 
   $ steghide embed -cf imagen.jpg -ef secreto.txt
- 
- Ingrese salvoconducto:
- 
- Re-ingrese el salvoconducto:
- 
- adjuntando "secreto.txt" en "imagen.jpg"... hecho
- 
+  Ingrese salvoconducto:
+  Re-ingrese el salvoconducto:
+  adjuntando "secreto.txt" en "imagen.jpg"... hecho
+
 Este comando adjuntará el archivo secreto.txt en el archivo de portada imagen.jpg.
 
 Una vez adjuntado los datos secretos como se vió antes podemos enviar el archivo 
@@ -124,11 +108,9 @@ imagen.jpg a la persona que debería recibir el mensaje secreto. El receptor deb
 usar steghide de la siguiente manera:
 
   $ steghide extract -sf imagen.jpg
- 
- Ingrese salvoconducto:
- 
- los datos extraídos se grabaron en "secreto.txt".
- 
+  Ingrese salvoconducto:
+  los datos extraídos se grabaron en "secreto.txt".
+
 Si el salvoconducto declarado es el correcto, el contenido del archivo original 
 secreto.txt se extraerá del archivo stego imagen.jpg y se grabará en 
 el directorio actual.
@@ -137,25 +119,16 @@ Si hemos recibido un archivo que contiene datos adjuntos y quisiéramos tener
 más información sobre el mismo antes de extraerlo, usaremos el comando info:
 
   $ steghide info archivo_recibido.wav
- 
- "archivo_recibido.wav":
- 
-   formato: wave audio, PCM encoding
-   
-   capacidad: 3.5 KB
-  ¿
-  Intento extraer información sobre los datos adjuntos? (y/n) y
- 
- Ingrese salvoconducto:
- 
-   archivo adjunto "secreto.txt":
-   
-     tamaño: 1.6 KB
-     
-     encriptado: rijndael-128, cbc
-     
-     comprimido: si
-     
+  "archivo_recibido.wav":
+    formato: wave audio, PCM encoding
+    capacidad: 3.5 KB
+  ¿ Intento extraer información sobre los datos adjuntos? (y/n) y
+  Ingrese salvoconducto:
+    archivo adjunto "secreto.txt":
+      tamaño: 1.6 KB
+      encriptado: rijndael-128, cbc
+      comprimido: si
+
 Luego de emitir algunos datos generales sobre el archivo stego (formato, capacidad) se nos preguntará 
 si queremos que steghide obtenga información sobre los datos adjuntos. Si respondemos con 
 yes tendremos que declarar un salvoconducto. Steghide entonces intentará extraer los datos adjuntos
@@ -204,4 +177,3 @@ Pueden contactarme (Stefan Hetzl) por e-mail: shetzl@chello.at
 Traducción al castellano :
 --------------------------
 versión 1 - Alberto Adrián Schiano (chanio@users.sourceforge.net)
-

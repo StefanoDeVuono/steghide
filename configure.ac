@@ -1,7 +1,8 @@
 dnl Process this file with autoconf to produce a configure script.
-AC_INIT(src/main.cc)
-AC_CANONICAL_SYSTEM
-AM_INIT_AUTOMAKE(steghide, 0.5.1)
+AC_INIT
+AC_CONFIG_SRCDIR([src/main.cc])
+AC_CANONICAL_TARGET
+AM_INIT_AUTOMAKE(steghide, 0.6.0)
 AM_CONFIG_HEADER(config.h)
 
 dnl checks for programs.
@@ -47,7 +48,15 @@ AC_ARG_ENABLE(randomness,[  --disable-randomness    disable randomness making ev
 )
 
 dnl Checks for header files.
-AC_HEADER_STDC
+m4_warn([obsolete],
+[The preprocessor macro `STDC_HEADERS' is obsolete.
+  Except in unusual embedded environments, you can safely include all
+  ISO C90 headers unconditionally.])dnl
+# Autoupdate added the next two lines to ensure that your configure
+# script's behavior did not change.  They are probably safe to remove.
+AC_CHECK_INCLUDES_DEFAULT
+AC_PROG_EGREP
+
 AC_HEADER_SYS_WAIT
 AC_CHECK_HEADERS(limits.h termios.h)
 
@@ -216,4 +225,5 @@ then
 fi
 
 dnl create Makefiles
-AC_OUTPUT([Makefile steghide.spec steghide.doxygen doc/Makefile po/Makefile.in src/Makefile tests/Makefile tests/data/Makefile m4/Makefile intl/Makefile])
+AC_CONFIG_FILES([Makefile steghide.spec steghide.doxygen doc/Makefile po/Makefile.in src/Makefile tests/Makefile tests/data/Makefile m4/Makefile intl/Makefile])
+AC_OUTPUT
